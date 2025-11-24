@@ -6,11 +6,17 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Open Sans', sans-serif; /*especifico el nombre y familia de la tipografia a usar*/
+   font-family: 'Montserrat', 'Open Sans', sans-serif; /*especifico el nombre y familia de la tipografia a usar*/
 }
 html {
   scroll-behavior: smooth; /*para desplazarse "scrolear" suavemente dentro de la página al presionar un enlace*/
 }
+
+body {
+    background-color: #A9B9D9; /* Fondo principal azul grisáceo */
+    color: #333333; /* Color de texto general */
+}
+
 /***************************************************/
 
 
@@ -19,11 +25,11 @@ html {
 /**********************************/
 header {/*caracteristicas elementos dentro del header de la pagina*/
 	font-size: 24px; /*tamaño de las fuentes que aprecen en el header*/
-  	background-color: white;  /*color fondo encabezado*/
+  	background-color: #D9CDB8;  /*color fondo encabezado - BEIGE */
     height: 130px;  /* altura del encabezado, equivale a 5.5em*/
     padding-left: 10%; /*hago un espacio a la izquierda al interior del contenedor header de 10% del ancho del viewport*/
     padding-right: 10%; /*hago un espacio a la derecha al interior del contenedor header de 10% del ancho del viewport*/
-  	box-shadow: 0px 1px 8px grey; /*efecto de material con sombreado sobre el fondo*/
+  	box-shadow: 0px 1px 8px rgba(0,0,0,0.2); /*efecto de material con sombreado sobre el fondo*/
     transition: 100ms; /*para la transicion con media queries diseño responsivo*/
 }
 @media screen and (max-width: 700px) {
@@ -54,7 +60,7 @@ header {
 	cuando hay mas de uno distribuya el esapcio restante entre los espacios de cada elemento/item*/
 }
 .ligas-secciones a{/*caracteristicas elementos tipo enlace dentro del contenedor con clase secciones*/
-	color: grey; /*color que tendran las fuentes de los enlaces*/
+	color: #A62121; /*color que tendran las fuentes de los enlaces - ROJO VINO */
 	text-decoration: none; /*le quito decoraciones a los enlaces, saeln sin subrayar ahora*/
   	font-weight: bold; /*tipo de letra bold*/
  	margin-top: 10px;
@@ -63,6 +69,7 @@ header {
 .ligas-secciones a:hover{
   transform: scale(1.03);
   transition: 50ms;
+  color: #0583F2; /* Azul vibrante al hover */
 }
 /**media query cuando ancho es menor o igual a 700px**/
 @media screen and (max-width: 700px) {
@@ -89,20 +96,33 @@ header {
   	padding-left: 10%; /*hago un espacio a la izquierda al interior del contenedor header de 10% del ancho del viewport*/
     padding-right: 10%; /*hago un espacio a la derecha al interior del contenedor header de 10% del ancho del viewport*/
 }
+
+/* COLORES ALTERNANTES PARA SECCIONES */
+.seccion-contenedor:nth-child(odd) {
+    background-color: #A9B9D9; /* Azul grisáceo para secciones impares */
+}
+
+.seccion-contenedor:nth-child(even) {
+    background-color: #D9CDB8; /* Beige para secciones pares */
+}
+
 .texto-secc {
 	display: flex; /*sera un elemento/item de tipo flex*/
 	flex-direction: column; /*rederizara/dibujara los items/elementos hijos en el layout 
   	como una columna, un contenedor o un item sobre el otro */
+    text-align: center; /* Centrar todo el texto */
 }
 .texto-secc h1{
 	display: flex; /*sera un elemento/item de tipo flex*/
 	justify-content: center; /*defino la alineación horizontal de los items hijos al centro*/
 	margin-top: 25px;
+    color: #0583F2; /* Azul vibrante para títulos */
 }
 .texto-secc p{
 	font-size: 18pt;
 	display: flex; /*sera un elemento/item de tipo flex*/
 	margin-top: 10px;
+    justify-content: center; /* Centrar párrafos */
 }
 .contenedor-imagen {
   	display: flex; /*sera un elemento/item de tipo flex*/
@@ -114,6 +134,46 @@ header {
   	flex-direction: column;
   	align-items: center; 
 }
+
+/* NUEVOS ESTILOS PARA DISPOSICIÓN VERTICAL CENTRADA */
+.imgs-secc-1-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-texto-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.imagen-texto-vertical img {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto 15px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.imagen-texto-vertical p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 16pt;
+    font-style: italic;
+}
+
+.espacio-entre-imagenes {
+    height: 40px;
+    width: 100%;
+}
+
 .par-imgs-escritorio{/*caracteristicas elementos en contenedor con la clase secciones*/
 	/*border: 5px solid #555;  /* For debugging */
 	width: 65%; /*ancho que tendra el contenedor con clase menu*/
@@ -201,6 +261,7 @@ header {
 	font-size: 16pt;
 	font-style: italic;
 	display: flex; /*sera un elemento/item de tipo flex*/
+    justify-content: center;
 }
 /**media query cuando ancho es menor o igual a 700px**/
 @media screen and (max-width: 700px){
@@ -224,6 +285,7 @@ header {
 	font-style: italic;
 	font-size: 16pt;
 	display: flex; /*sera un elemento/item de tipo flex*/
+    justify-content: center;
 }
 .contenedor-imagen-secc4 img{
 	display: flex; /*sera un elemento/item de tipo flex*/
@@ -257,9 +319,10 @@ header {
 /*estilos para footer de la página*/
 /**********************************/
 footer {
-  	background-color: white;/*color fondo pie de pagina*/
+  	background-color: #359AF2;/*color fondo pie de pagina - AZUL MEDIO */
+    color: white;
   	margin-top: 40px;
-  	box-shadow: 0px 1px 8px grey;
+  	box-shadow: 0px 1px 8px rgba(0,0,0,0.2);
   	display: flex; /*sera un elemento/item de tipo flex*/
   	flex-direction: column;
   	align-items: center; 
@@ -273,12 +336,18 @@ footer {
 .footer-item img{
 	height: 60px;
 	margin-right: 35px;
+    transition: 200ms;
+}
+.footer-item img:hover{
+    transform: scale(1.1);
+    transition: 200ms;
 }
 .copyright{
 	font-size: 17pt;
 	text-align: center;
 	margin-top: 49px;
 	margin-bottom: 95px;
+    color: #D9CDB8; /* Beige para el texto de copyright */
 }
 /**media query cuando ancho es menor o igual a 700px**/
 @media screen and (max-width: 700px){
@@ -316,6 +385,10 @@ footer {
   	cursor:pointer;
   	position:fixed;
  	bottom:20px;
+    background-color: #A62121; /* Rojo vino de fondo */
+    border-radius: 50%;
+    padding: 10px;
+    transition: 200ms;
 }
 /**media query cuando ancho es menor o igual a 700px**/
 @media screen and (max-width: 700px){
@@ -327,5 +400,6 @@ footer {
 .ir-arriba img:hover{
 	transform: scale(1.1);
   	transition: 100ms;
+    background-color: #0583F2; /* Azul al hover */
 }
 /***************************************************/
