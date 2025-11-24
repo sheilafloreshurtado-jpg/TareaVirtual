@@ -1,0 +1,222 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>DES CONSIENCES</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> <head>
+    <title>DES CONSIENCES</title>
+    <link rel='stylesheet' href='estilos.css'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- ESTILOS TEMPORALES - PEGA ESTO -->
+    <style>
+        body {
+            background-color: #A9B9D9 !important;
+            color: #333333;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: #0583F2 !important;
+            font-size: 2.5rem;
+        }
+        
+        .menu-container {
+            background-color: #D9CDB8 !important;
+            padding: 1rem;
+        }
+        
+        .ligas-secciones a {
+            color: #A62121 !important;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        
+        .seccion-contenedor {
+            padding: 3rem 2rem;
+            min-height: 50vh;
+        }
+    </style>
+</head>
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+    <a href="#secc1">Inicio</a>
+    <a href="#secc2">El Festival</a>
+    <a href="#secc3">Ponentes</a>
+    <a href="#secc4">Experiencia</a>
+</div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		         <h1>L´ECHO DES CONSIENCES: Festival de las Ideas</h1>
+        <p>Bienvenidos al encuentro internacional que desafía los límites del pensamiento convencional. En los majestuosos jardines del Museo del Louvre en París, nace un espacio único donde las mentes más audaces se reúnen para iluminar las sombras de nuestro tiempo. L´ECHO DES CONSIENCES no es solo un festival; es una experiencia transformadora que fusiona el arte, la literatura, el cine y el debate de alto nivel.</p>
+        <br>
+        <p>Durante tres días, exploraremos las narrativas ocultas, las ideas revolucionarias y las verdades incómodas que dan forma a nuestro mundo. A través de conferencias magistrales, una feria de libros provocadora y un ciclo de cine disruptivo, te invitamos a cuestionar, aprender y conectar con una comunidad global de pensadores libres. Prepárate para encender la chispa de un nuevo entendimiento.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+<!--contenedor para las imagenes de la sección 1 - VERTICAL Y CENTRADO -->
+<div class="imgs-secc-1-vertical" style="display: flex; flex-direction: column; align-items: center; width: 100%; text-align: center;">
+
+    <!-- PRIMERA IMAGEN con su texto -->
+    <div class="imagen-texto-vertical" style="display: flex; flex-direction: column; align-items: center; width: 100%; margin-bottom: 20px;">
+        <img src="imagenes/img1a.png" title="Img 1a" style="max-width: 70%; height: auto; margin: 0 auto 15px auto; display: block; border-radius: 10px;">
+        <p style="text-align: center; max-width: 600px; margin: 0 auto; line-height: 1.5;">El identificador oficial de L'ECHO DES CONSCIENCES, símbolo del eco de las conciencias.</p>
+    </div>
+
+    <!-- ESPACIO ENTRE IMÁGENES -->
+    <div style="height: 40px; width: 100%;"></div>
+
+    <!-- SEGUNDA IMAGEN con su texto -->
+    <div class="imagen-texto-vertical" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="imagenes/img1b.png" title="Img 1b" style="max-width: 70%; height: auto; margin: 0 auto 15px auto; display: block; border-radius: 10px;">
+        <p style="text-align: center; max-width: 600px; margin: 0 auto; line-height: 1.5;">El escenario del festival: un diálogo entre la historia y las ideas futuras en los jardines del Louvre.</p>
+    </div>
+
+</div>
+</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Los Tres Pilares de L´ECHO DES CONSIENCES</h1>
+        <p>LUMINAS se estructura en tres ejes fundamentales que se entrelazan para ofrecer una experiencia inmersiva e integral. Cada pilar está diseñado para abordar la búsqueda de la verdad desde un ángulo diferente, desafiando al espectador a ver más allá de la superficie.</p>
+        <br>
+        <p><strong>Conferencias de Vanguardia:</strong> Escucha a investigadores y autores que han dedicado su vida a destapar las estructuras de poder, el control mental y la manipulación histórica. Un espacio para el análisis profundo y la conversación sin censura.</p>
+        <p><strong>Feria del Libro Prohibido:</strong> Descubre una selección curada de obras que han sido ignoradas, censuradas o malinterpretadas. Un viaje literario por las ideas que cambiaron el mundo y las que pueden cambiarlo de nuevo.</p>
+        <p><strong>Ciclo de Cine y Documentales:</strong> Sumérgete en proyecciones audiovisuales que exponen las realidades incómodas y las narrativas ocultas. Del cine distópico a los documentales que reescriben la historia económica y social.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2.png" title="Img 2">
+        		<!--texto para la imagen-->
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Voces que Iluminan el Camino</h1>
+        <p>En L´ECHO DES CONSIENCES, reunimos a un elenco excepcional de pensadores cuyas investigaciones han puesto en jaque las narrativas oficiales. Estos son algunos de los ponentes que compartirán sus hallazgos y perspectivas exclusivas contigo.</p>
+        <br>
+        <p><strong>Jorge Guerra:</strong> Analista de los poderes fácticos y la ingeniería social. Nos adentrará en los mecanismos de la "tercera guerra mental" y la influencia de la nobleza negra en los acontecimientos globales.</p>
+        <p><strong>Antony Sutton:</strong> Su legado de investigación sobre la exportación de tecnología occidental a la Unión Soviética expone las complejas relaciones entre el capitalismo, el socialismo y el poder.</p>
+        <p><strong>Guillermo Mas Arellano:</strong> Un faro en la divulgación de temas históricos y geopolíticos ocultos, conectando los hilos entre el pasado y el presente.</p>
+        <p><strong>Pável Dúrov:</strong> El fundador de Telegram nos brindará una conferencia magistral sobre la privacidad digital, la libertad de expresión y las batallas por el control de internet en el siglo XXI.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		       <h1>Sumérgete en la Experiencia</h1>
+        <p>L´ECHO DES CONSIENCES va más allá de las charlas. Te invitamos a ser parte activa de este viaje intelectual a través de experiencias únicas diseñadas para ampliar tus horizontes.</p>
+        <br>
+        <p><strong>Recorrido Virtual Nocturno: Antes de tu visita, explora los misteriosos y bellos jardines del Louvre en una experiencia inmersiva de 360°. Siente la atmósfera del lugar donde la historia y las ideas se encuentran. <a href="#recorrido360" style="color: #yourColor; text-decoration:"></a></p>
+        <p>Trailers Exclusivos:
+        Adéntrate en los temas del festival desde ahora. Hemos creado una serie de trailers cinematográficos sobre nuestros ponentes, los libros y las películas. Escanea el código QR de nuestro cartel o visita la sección correspondiente para verlos.</p>
+        <p>Cartel de L´ECHO DES CONSIENCES:
+        Nuestro póster no es solo un anuncio; es una puerta de entrada. A través de sus códigos QR, tendrás acceso inmediato a toda la experiencia digital del festival.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img4.png" title="Img 4">
+        		<!--texto para la imagen-->
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
